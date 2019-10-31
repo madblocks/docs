@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Tutorial - 1: Getting Started - madBlocks Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Tutorial - 1: Getting Started";
+    var mkdocs_page_input_path = "Micropython\\GettingStarted.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> madBlocks Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Intro</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Micropython</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Tutorial - 1: Getting Started</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#downloading-micropython">Downloading MicroPython</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#installing-micropython">Installing MicroPython</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#running-program">Running Program</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#conclusion">Conclusion</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">madBlocks Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Micropython &raquo;</li>
+        
+      
+    
+    <li>Tutorial - 1: Getting Started</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="what-is-micropython">What is MicroPython?</h1>
+<p>MicroPython is a software implementation of a programming language largely compatible with Python3, written in C, that is optimized to run on a generic microcontroller.<br/></p>
+<p>MicroPython is a full Python compiler and runtime that runs on the microcontroller hardware. The user is presented with an interactive prompt to execute supported commands immediately.
+Included are a selection of core Python libraries; MicroPython includes modules which give the programmer access to low-level hardware.</p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/mp-logo.png" />
+</center></p>
+<p>To know more about MicroPython, do visit <a href="http://www.micropython.org">MicroPython Community</a>. </p>
+<h2 id="downloading-micropython">Downloading MicroPython</h2>
+<p>You can quickly download the MicroPython SDK from our <center><h1><a href="http://dashboard.madblocks.tech" target="_blank">madBlocks Dashboard.</a></h1></center>
+In this tutorial series of MicroPython, I'm going to use a board called 
+NodeMCU with ESP8266 architecture. You can purchase it from our <a href="http://dashboard.madblocks.tech">dashboard</a> too. </p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img1.png" /><br/><br/>
+<b>Step - 1: </b> You need to open the dashboard <br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img2.png" /><br/><br/>
+<b>Step - 2: </b> You have to enter your credentials and Click Sign In<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img3.png" /><br/><br/>
+<b>Step - 3: </b> You have to focus on dashboard menu bar<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img4.png" /><br/><br/>
+<b>Step - 4: </b> You have to focus on Launchpad and you have to click on Git option<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img5.png" /><br/><br/>
+<b>Step - 5: </b> You have to focus on Git ID: 107, and you have to click on Fork button<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img6.png" /><br/><br/>
+<b>Step - 6: </b> You will get a pop-up says that we have released your file<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img7.png" /><br/><br/>
+<b>Step - 7: </b> You have to focus on My Forks under Launchpad tab in dashboard menu bar<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img8.png" /><br/><br/>
+<b>Step - 8: </b> You have to click on Download Git from the My Forks table<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img9.png" /><br/><br/>
+<b>Step - 9: </b> Finally MicroPython SDK is downloaded from Dashboard<br/>
+</center></p>
+<h2 id="installing-micropython">Installing MicroPython</h2>
+<p>After downloading the SDK zip file from our dashboard, lets understand how to install it. Ensure your NodeMCU is ready and connected at USB Port of your laptop or
+Desktop PC. </p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img10.png" /><br/><br/>
+<b>Step - 1: </b> The SDK Zip which is downloaded from the previous steps<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img11.png" /><br/><br/>
+<b>Step - 2: </b> Right Click on the Zip file, and select Extract to uPyCraft_V0.30\<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img12.png" /><br/><br/>
+<b>Step - 3: </b> You will be able to get a folder as this<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img13.png" /><br/><br/>
+<b>Step - 4: </b> You will be able to see only two files in the folder as this<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img14.png" /><br/><br/>
+<b>Step - 5: </b> You have to double click on the application, click ok to install<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img15.png" /><br/><br/>
+<b>Step - 6: </b> You have to click on install button as shown above<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img16.png" /><br/><br/>
+<b>Step - 7: </b> You have to click on close button as shown above<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img17.png" /><br/><br/>
+<b>Step - 8: </b> uPyCraft IDE will open as above<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img18.png" /><br/><br/>
+<b>Step - 9: </b> Click on Tools -&gt; Board -&gt; and select ESP8266<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img19.png" /><br/><br/>
+<b>Step - 10: </b> ESP8266 should be selected<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img20.png" /><br/><br/>
+<b>Step - 11: </b> Click on Tools -&gt; Serial -&gt; and select Port Number<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img21.png" /><br/><br/>
+<b>Step - 12: </b> Port number has to be selected as shown above<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img22.png" /><br/><br/>
+<b>Step - 13: </b> Click on Tools -&gt; Burn Firmware<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img23.png" /><br/><br/>
+<b>Step - 14: </b> Select board as ESP8266, erase_flash as yes, and com to respective COM Number<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img24.png" /><br/><br/>
+<b>Step - 15: </b> Select users as shown above and click on choose and browse to the sdk folder extracted<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img25.png" /><br/><br/>
+<b>Step - 16: </b> Select the bin file as shown above<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img26.png" /><br/><br/>
+<b>Step - 17: </b> Click on Ok to flash the file<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img27.png" /><br/><br/>
+<b>Step - 18: </b> Wait until it gets flashed<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img28.png" /><br/><br/>
+<b>Step - 19: </b> After flashing/burning, you will get as above<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img29.png" /><br/><br/>
+<b>Step - 20: </b> Select Tools -&gt; Port -&gt; and Select the Port number as above<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img30.png" /><br/><br/>
+<b>Step - 21: </b> Finally, you are MicroPython and board is ready for play.<br/>
+</center></p>
+<h2 id="running-program">Running Program</h2>
+<p>Lets execute a basic program to print your name on this platform.</p>
+<pre><code>    print ('Madhu is a Good Boy')
+</code></pre>
+
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img31.png" /><br/><br/>
+<b>Step - 1: </b> Click on New File as shown above.<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img32.png" /><br/><br/>
+<b>Step - 2: </b> Click on Save Button as shown above.<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img33.png" /><br/><br/>
+<b>Step - 3: </b> Enter the file name and don't forget to give extension .py as shown above<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img34.png" /><br/><br/>
+<b>Step - 4: </b> Write Program and Click Save Button as shown above<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img35.png" /><br/><br/>
+<b>Step - 5: </b> Click Download Button as shown above, ensure NodeMCU is connected<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img36.png" /><br/><br/>
+<b>Step - 6: </b> You can see the output in console as shown above<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img37.png" /><br/><br/>
+<b>Step - 7: </b> You can see the downloaded script under device<br/>
+</center></p>
+<p><center>
+<img alt="Screenshot" src="http://madblocks.tech/documentation/micropython/img38.png" /><br/><br/>
+<b>Step - 8: </b> If you want to re-run the program, you can click run button as above<br/>
+</center></p>
+<p>Note: If you edit the program, you have to repeat from Step - 5.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In this tutorial, I had elaborated how to download and install MicroPython SDK from our dashboard and also I've shown you how to 
+write a simple python script using MicroPython tool and finally I've shown you how to upload the script onto the NodeMCU board.</p>
+<p><b>PS: If you get any error, send us your image to our WhatsApp on 0-7893015625 </b></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../.." class="btn btn-neutral" title="Intro"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../.." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script type="text/javascript" defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
